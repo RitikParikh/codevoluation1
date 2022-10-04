@@ -1,7 +1,9 @@
 // import logo from '../logo.svg';
 import '../App.css';
+// import ClassMouseTwo from './ClassMouseTwo';
+import MouseContainer from './MouseContainer';
 // import ClassMouse from './ClassMouse';
-import HookMouse from './HookMouse';
+// import HookMouse from './HookMouse';
 // import ClassCounterOne from './ClassCounterOne';
 // import HookCounterFive from './HookCounterFive';
 // import ClassCounterTwo from './ClassCounterTwo';
@@ -25,7 +27,9 @@ function Basic() {
         {/* <ClassCounterTwo/> */}
         {/* <HookCounterSix/> */}
         {/* <ClassMouse/> */}
-        <HookMouse/>
+        {/* <HookMouse/> */}
+        <MouseContainer/>
+        {/* <ClassMouseTwo/> */}
       </div>
     );
   }
