@@ -1,9 +1,10 @@
 // import logo from '../logo.svg';
 import '../App.css';
+import DataFatching from './DataFatching';
 // import IntervalHookCounter from './IntervalHookCounter';
 // import IntervalClassCounter from './IntervalClassCounter';
 // import ClassMouseTwo from './ClassMouseTwo';
-import MouseContainer from './MouseContainer';
+// import MouseContainer from './MouseContainer';
 // import ClassMouse from './ClassMouse';
 // import HookMouse from './HookMouse';
 // import ClassCounterOne from './ClassCounterOne';
@@ -30,10 +31,11 @@ function Basic() {
         {/* <HookCounterSix/> */}
         {/* <ClassMouse/> */}
         {/* <HookMouse/> */}
-        <MouseContainer/>
+        {/* <MouseContainer/> */}
         {/* <ClassMouseTwo/> */}
         {/* <IntervalClassCounter/>  */}
         {/* <IntervalHookCounter/> */}
+        <DataFatching/>
       </div>
     );
   }
