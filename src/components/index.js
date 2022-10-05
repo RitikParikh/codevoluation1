@@ -1,5 +1,7 @@
 // import logo from '../logo.svg';
 import '../App.css';
+// import IntervalHookCounter from './IntervalHookCounter';
+// import IntervalClassCounter from './IntervalClassCounter';
 // import ClassMouseTwo from './ClassMouseTwo';
 import MouseContainer from './MouseContainer';
 // import ClassMouse from './ClassMouse';
@@ -30,6 +32,8 @@ function Basic() {
         {/* <HookMouse/> */}
         <MouseContainer/>
         {/* <ClassMouseTwo/> */}
+        {/* <IntervalClassCounter/>  */}
+        {/* <IntervalHookCounter/> */}
       </div>
     );
   }
