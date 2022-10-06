@@ -1,6 +1,8 @@
 // import logo from '../logo.svg';
 import '../App.css';
-import DataFatching from './DataFatching';
+import React from 'react';
+import ComponentC from './ComponentC';
+// import DataFatching from './DataFatching';
 // import IntervalHookCounter from './IntervalHookCounter';
 // import IntervalClassCounter from './IntervalClassCounter';
 // import ClassMouseTwo from './ClassMouseTwo';
@@ -16,7 +18,8 @@ import DataFatching from './DataFatching';
 // import HookCounterTwo from './HookCounterTwo';
 // import HookCounterThree from './HookCounterThree';
 // import HookCounterFour from './HookCounterFour';
-
+export const UserContext = React.createContext();
+export const ChannelContext = React.createContext();
 function Basic() {
     return (
       <div className='App'>
@@ -35,7 +38,12 @@ function Basic() {
         {/* <ClassMouseTwo/> */}
         {/* <IntervalClassCounter/>  */}
         {/* <IntervalHookCounter/> */}
-        <DataFatching/>
+        {/* <DataFatching/> */}
+        <UserContext.Provider value={'Ritik'}>
+        <ChannelContext.Provider value={'Parikh'}>
+          <ComponentC/>
+        </ChannelContext.Provider>
+        </UserContext.Provider>
       </div>
     );
   }
