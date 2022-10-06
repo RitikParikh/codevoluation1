@@ -1,7 +1,7 @@
 // import logo from '../logo.svg';
 import '../App.css';
 import React from 'react';
-import ComponentC from './ComponentC';
+// import ComponentC from './ComponentC';
 // import DataFatching from './DataFatching';
 // import IntervalHookCounter from './IntervalHookCounter';
 // import IntervalClassCounter from './IntervalClassCounter';
@@ -18,8 +18,8 @@ import ComponentC from './ComponentC';
 // import HookCounterTwo from './HookCounterTwo';
 // import HookCounterThree from './HookCounterThree';
 // import HookCounterFour from './HookCounterFour';
-export const UserContext = React.createContext();
-export const ChannelContext = React.createContext();
+// export const UserContext = React.createContext();
+// export const ChannelContext = React.createContext();
 function Basic() {
     return (
       <div className='App'>
@@ -39,11 +39,11 @@ function Basic() {
         {/* <IntervalClassCounter/>  */}
         {/* <IntervalHookCounter/> */}
         {/* <DataFatching/> */}
-        <UserContext.Provider value={'Ritik'}>
+        {/* <UserContext.Provider value={'Ritik'}>
         <ChannelContext.Provider value={'Parikh'}>
           <ComponentC/>
         </ChannelContext.Provider>
-        </UserContext.Provider>
+        </UserContext.Provider> */}
       </div>
     );
   }
