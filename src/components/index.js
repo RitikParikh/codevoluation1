@@ -1,6 +1,9 @@
 // import logo from '../logo.svg';
 import '../App.css';
 import React from 'react';
+// import CounterOne from './CounterOne';
+// import CounterTwo from './CounterTwo';
+import CounterThree from './CounterThree';
 // import ComponentC from './ComponentC';
 // import DataFatching from './DataFatching';
 // import IntervalHookCounter from './IntervalHookCounter';
@@ -44,6 +47,9 @@ function Basic() {
           <ComponentC/>
         </ChannelContext.Provider>
         </UserContext.Provider> */}
+        {/* <CounterOne/> */}
+        {/* <CounterTwo/> */}
+        <CounterThree/>
       </div>
     );
   }
