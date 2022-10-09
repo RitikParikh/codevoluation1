@@ -1,9 +1,12 @@
 // import logo from '../logo.svg';
 import '../App.css';
-import React from 'react';
+import React, {useReducer} from 'react';
+import ComponentI from './ComponentI';
+import ComponentJ from './ComponentJ';
+import ComponentK from './ComponentK';
 // import CounterOne from './CounterOne';
 // import CounterTwo from './CounterTwo';
-import CounterThree from './CounterThree';
+// import CounterThree from './CounterThree';
 // import ComponentC from './ComponentC';
 // import DataFatching from './DataFatching';
 // import IntervalHookCounter from './IntervalHookCounter';
@@ -23,9 +26,27 @@ import CounterThree from './CounterThree';
 // import HookCounterFour from './HookCounterFour';
 // export const UserContext = React.createContext();
 // export const ChannelContext = React.createContext();
+
+export const CountContext = React.createContext();
+
+const initialState = 0;
+const reducer = (state, action) =>{
+   switch (action) {
+    case 'increment':
+        return state+1;
+    case 'decrement':
+        return state>0 ? state-1 : state;
+    case 'reset':
+        return initialState;
+    default: return state;
+   }
+}
+
 function Basic() {
+  const [count, dispatch] =  useReducer(reducer,initialState)
     return (
-      <div className='App'>
+      <CountContext.Provider value={{countState:count, countDispatch:dispatch}}>
+        <div className='App'>
         {/* <ClassCounter/>  */}
         {/* <HookCounter/>  */}
         {/* <HookCounterTwo/>  */}
@@ -49,8 +70,16 @@ function Basic() {
         </UserContext.Provider> */}
         {/* <CounterOne/> */}
         {/* <CounterTwo/> */}
-        <CounterThree/>
-      </div>
+        {/* <CounterThree/> */}
+        
+         
+            Count - {count}
+            <br></br>
+            <ComponentI/> 
+            <ComponentJ/>
+            <ComponentK/>
+          </div>
+        </CountContext.Provider>
     );
   }
 export default Basic;
