@@ -2,6 +2,9 @@
 import '../App.css';
 // import React, {useReducer} from 'react';
 import React from 'react';
+// import FocusInput from './FocusInput';
+// import ClassTImer from './ClassTImer';
+// import HookTimer from './HookTimer';
 // import MemoCounter from './MemoCounter';
 // import ParentComponent from './ParentComponent';
 // import ComponentI from './ComponentI';
@@ -87,6 +90,9 @@ function Basic() {
             {/* <FatchDataTwo/> */}
             {/* <ParentComponent/> */}
             {/* <MemoCounter/> */}
+            {/* <FocusInput/> */}
+            {/* <ClassTImer/> */}
+            {/* <HookTimer/> */}
           </div>
         // </CountContext.Provider>
     );
