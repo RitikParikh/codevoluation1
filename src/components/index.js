@@ -1,6 +1,9 @@
 // import logo from '../logo.svg';
 import '../App.css';
-import React, {useReducer} from 'react';
+// import React, {useReducer} from 'react';
+import React from 'react';
+// import MemoCounter from './MemoCounter';
+// import ParentComponent from './ParentComponent';
 // import ComponentI from './ComponentI';
 // import ComponentJ from './ComponentJ';
 // import ComponentK from './ComponentK';
@@ -82,6 +85,8 @@ function Basic() {
             <ComponentK/> */}
             {/* <FatchDataOne/> */}
             {/* <FatchDataTwo/> */}
+            {/* <ParentComponent/> */}
+            {/* <MemoCounter/> */}
           </div>
         // </CountContext.Provider>
     );
