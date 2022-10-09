@@ -1,9 +1,11 @@
 // import logo from '../logo.svg';
 import '../App.css';
 import React, {useReducer} from 'react';
-import ComponentI from './ComponentI';
-import ComponentJ from './ComponentJ';
-import ComponentK from './ComponentK';
+// import ComponentI from './ComponentI';
+// import ComponentJ from './ComponentJ';
+// import ComponentK from './ComponentK';
+// import FatchDataOne from './FatchDataOne';
+// import FatchDataTwo from './FatchDataTwo';
 // import CounterOne from './CounterOne';
 // import CounterTwo from './CounterTwo';
 // import CounterThree from './CounterThree';
@@ -27,25 +29,25 @@ import ComponentK from './ComponentK';
 // export const UserContext = React.createContext();
 // export const ChannelContext = React.createContext();
 
-export const CountContext = React.createContext();
+// export const CountContext = React.createContext();
 
-const initialState = 0;
-const reducer = (state, action) =>{
-   switch (action) {
-    case 'increment':
-        return state+1;
-    case 'decrement':
-        return state>0 ? state-1 : state;
-    case 'reset':
-        return initialState;
-    default: return state;
-   }
-}
+// const initialState = 0;
+// const reducer = (state, action) =>{
+//    switch (action) {
+//     case 'increment':
+//         return state+1;
+//     case 'decrement':
+//         return state>0 ? state-1 : state;
+//     case 'reset':
+//         return initialState;
+//     default: return state;
+//    }
+// }
 
 function Basic() {
-  const [count, dispatch] =  useReducer(reducer,initialState)
+  // const [count, dispatch] =  useReducer(reducer,initialState)
     return (
-      <CountContext.Provider value={{countState:count, countDispatch:dispatch}}>
+      // <CountContext.Provider value={{countState:count, countDispatch:dispatch}}>
         <div className='App'>
         {/* <ClassCounter/>  */}
         {/* <HookCounter/>  */}
@@ -73,13 +75,15 @@ function Basic() {
         {/* <CounterThree/> */}
         
          
-            Count - {count}
-            <br></br>
+            {/* Count - {count}
+            <br> </br>
             <ComponentI/> 
             <ComponentJ/>
-            <ComponentK/>
+            <ComponentK/> */}
+            {/* <FatchDataOne/> */}
+            {/* <FatchDataTwo/> */}
           </div>
-        </CountContext.Provider>
+        // </CountContext.Provider>
     );
   }
 export default Basic;
