@@ -2,6 +2,11 @@
 import '../App.css';
 // import React, {useReducer} from 'react';
 import React from 'react';
+import UserFrom from './UserFrom';
+// import OneCounter from './OneCounter';
+// import TwoCounter from './TwoCounter';
+// import DocTitleOne from './DocTitleOne';
+// import DocTitleTwo from './DocTitleTwo';
 // import FocusInput from './FocusInput';
 // import ClassTImer from './ClassTImer';
 // import HookTimer from './HookTimer';
@@ -93,6 +98,11 @@ function Basic() {
             {/* <FocusInput/> */}
             {/* <ClassTImer/> */}
             {/* <HookTimer/> */}
+            {/* <DocTitleOne/> */}
+            {/* <DocTitleTwo/> */}
+            {/* <OneCounter/>
+            <TwoCounter/> */}
+            <UserFrom/>
           </div>
         // </CountContext.Provider>
     );
